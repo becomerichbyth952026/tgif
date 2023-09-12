@@ -5,26 +5,26 @@
  let data =  senate_att_Data.results[0].members;
 
 
- let Members = data.sort(function(a, b) {
+ let members = data.sort(function(a, b) {
   return a.missed_votes - b.missed_votes;
 });
 
-let Membersup = Members.slice(-10);
+let membersUp = members.slice(-10);
 
-let defmembersUP = Members.sort(function(a,b){
+let defmembersUP = members.sort(function(a,b){
   return b.votes_with_party_pct - a.votes_with_party_pct;
 })
 
   
-let defMembersdown = Membersup.slice(0,10);
+let defMembersdown = membersUp.slice(0,10);
 
 
 buildTable1(defmembersUP);
 function buildTable1(members_one) {
   document.getElementById("table1").innerHTML = ""; 
-  for (var i = 0; i < members_one.length; i++) { 
-      var row = document.createElement("tr"); 
-      var link = document.createElement("a"); 
+  for (let i = 0; i < members_one.length; i++) { 
+      let row = document.createElement("tr"); 
+      let link = document.createElement("a"); 
       link.textContent = members_one[i].first_name + " " + (members_one[i].middle_name || "") + " " + members_one[i].last_name; 
       link.setAttribute("href", members_one[i].url) 
       row.insertCell().append(link); 
