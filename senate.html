@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Senate</title>
+    <link rel="stylesheet" href="./assets/styles/tgif.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="tgif-home-image.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <a class="logo" href="./home.html">TGIF</a>
+    <nav>
+      <ul>
+        <li><a class="button" href="./home.html">Home</a></li>
+        <li class="dropdown">
+          <button class="button dropdown-btn">Congress 113</button>
+          <ul class="dropdown-items">
+            <li><a href="./senate.html">Senate</a></li>
+            <li><a href="./house.html">House</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="button dropdown-btn">Attendance</button>
+          <ul class="dropdown-items">
+            <li><a href="./senate-attendance.html">Senate</a></li>
+            <li><a href="./house-attendance.html">House</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="button dropdown-btn">Loyalty</button>
+          <ul class="dropdown-items">
+            <li><a href="./senate-loyalty.html">Senate</a></li>
+            <li><a href="./house-loyalty.html">House</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  
+    <div>
+      <h1>Senators</h1>
+      <p>
+        First convened in 1789, the composition and powers of the Senate are established 
+        in Article One of the U.S. Constitution. Each state is represented by two senators, 
+        regardless of population, who serve staggered six-year terms. The Senate has 
+        several exclusive powers not granted to the House, including consenting to 
+        treaties as a precondition to their ratification and consenting to or confirming 
+        appointments of Cabinet secretaries, federal judges, other federal executive 
+        officials, military officers, regulatory officials, ambassadors, and other federal 
+        uniformed officers, as well as trial of federal officials impeached by the House.
+      </p>
+
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Party</th>
+              <th>State</th>
+              <th>Years in Office</th>
+              <th>% Votes with Party</th>
+          </tr>
+      </thead>
+      <tbody id="tbody">
+          
+      </tbody>
+      </table>
+    </d iv>
+    <footer>
+      <p>TGIF</p>
+    </footer>
+    <script src="tgif.js"></script>
+    <script src="./script/senate.mjs" type="module"></script>
+    <script src="./script/senate.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  </body>
+</html>
